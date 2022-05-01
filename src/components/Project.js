@@ -3,11 +3,9 @@ import { useWindowDimensions } from "../hooks/WindowDimensions"
 import { useProjects } from "../hooks/Projects"
 
 const BACKGROUND_COLOR = "#f5f5f7"
-const INDICATOR_TEXT_COLOR = "#7d7d7d"
-const PRIMARY_TEXT_COLOR = "#4a4a4a"
 
 let isPhone = false
-let titleFontSize, fontSize, bigFontSize, contentWidth
+let titleFontSize, bigFontSize, contentWidth
 
 export default function Project() {
   const [ searchParams ] = useSearchParams()
@@ -16,7 +14,6 @@ export default function Project() {
 
   isPhone = height / width >= 16 / 16
   titleFontSize = isPhone ? "1.25rem":"1.4rem"
-  fontSize = isPhone ? "1rem":"1.3rem"
   bigFontSize = isPhone ? "1.75rem":"3rem"
   contentWidth = isPhone ? "75%":"60%"
 

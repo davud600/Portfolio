@@ -2,17 +2,14 @@ import { useWindowDimensions } from "../hooks/WindowDimensions"
 import ProjectCard from "./ProjectCard"
 
 const BACKGROUND_COLOR = "#f5f5f7"
-const INDICATOR_TEXT_COLOR = "#7d7d7d"
-const PRIMARY_TEXT_COLOR = "#4a4a4a"
 
 let isPhone = false
-let titleFontSize, fontSize, bigFontSize, contentWidth
+let fontSize, bigFontSize, contentWidth
 
 export default function Portfolio() {
   const { width, height } = useWindowDimensions()
 
   isPhone = height / width >= 16 / 16
-  titleFontSize = isPhone ? "1.25rem":"1.4rem"
   fontSize = isPhone ? "1.25rem":"2.5rem"
   bigFontSize = isPhone ? "1.75rem":"3rem"
   contentWidth = isPhone ? "75%":"60%"
