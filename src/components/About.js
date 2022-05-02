@@ -1,3 +1,4 @@
+import { motion } from "framer-motion"
 import { useWindowDimensions } from "../hooks/WindowDimensions"
 
 const BACKGROUND_COLOR = "#f5f5f7"
@@ -22,7 +23,12 @@ export default function About() {
   }
 
   return (
-    <div className="pt-5 flex-column d-flex"
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { duration: 0.25 } }}
+      exit={{ opacity: 0 }}  
+
+      className="pt-5 flex-column d-flex"
       style={{ backgroundColor: BACKGROUND_COLOR
     }}>
       <div className="pt-3 d-flex justify-content-center">
@@ -97,6 +103,6 @@ export default function About() {
         </div>
       </div>
 
-    </div>
+    </motion.div>
   )
 }

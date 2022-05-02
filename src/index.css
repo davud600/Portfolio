@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.project-card-0:hover {
+  background-color: #faeded;
+}
+.project-card-1:hover {
+  background-color: #edf3fa;
+}
+.project-card-2:hover {
+  background-color: #f5faed;
+}
+
+.project-card {
+  background-color: white;
+  transition: 0.15s;
+}

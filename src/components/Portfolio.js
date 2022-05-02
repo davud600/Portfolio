@@ -1,3 +1,4 @@
+import { motion } from "framer-motion"
 import { useWindowDimensions } from "../hooks/WindowDimensions"
 import ProjectCard from "./ProjectCard"
 
@@ -15,7 +16,13 @@ export default function Portfolio() {
   contentWidth = isPhone ? "75%":"60%"
 
   return (
-    <div style={{ backgroundColor: BACKGROUND_COLOR }}>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { duration: 0.25 } }}
+      exit={{ opacity: 0 }}
+
+      style={{ backgroundColor: BACKGROUND_COLOR }}
+    >
 
       <div className="d-flex justify-content-center pt-5 pb-5">
         <div className="pt-5 d-flex justify-content-center">
@@ -105,6 +112,6 @@ export default function Portfolio() {
       <div className="pb-5"></div>
       <div className="pb-5"></div>
 
-    </div>
+    </motion.div>
   )
 }

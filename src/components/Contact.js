@@ -1,3 +1,4 @@
+import { motion } from "framer-motion"
 import { Form, Button } from "react-bootstrap"
 import { useWindowDimensions } from "../hooks/WindowDimensions"
 
@@ -30,7 +31,14 @@ export default function Contact() {
   }
 
   return (
-    <div className="pt-5 flex-column d-flex" style={{ backgroundColor: BACKGROUND_COLOR }}>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { duration: 0.25 } }}
+      exit={{ opacity: 0 }}
+
+      className="pt-5 flex-column d-flex"
+      style={{ backgroundColor: BACKGROUND_COLOR }}
+    >
       <div className="pt-3 d-flex justify-content-center">
         <p className="lead" style={{
           fontSize: titleFontSize
@@ -63,7 +71,7 @@ export default function Contact() {
           height: "100%",
           fontSize: fontSize,
           color: PRIMARY_TEXT_COLOR
-        }}>el-gato</a>
+        }}>davud600</a>
       </div>
       <hr className="pb-0 mb-0 mt-2 align-self-center" style={LINE_STYLE} />
       <div className="pb-5"></div>
@@ -116,6 +124,6 @@ export default function Contact() {
         </Form>
       </div>
 
-    </div>
+    </motion.div>
   )
 }

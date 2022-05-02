@@ -1,3 +1,4 @@
+import { motion } from "framer-motion"
 import { useWindowDimensions } from "../hooks/WindowDimensions"
 
 const BACKGROUND_COLOR = "#f5f5f7"
@@ -14,7 +15,14 @@ export default function Home() {
   contentWidth = isPhone ? "75%":"60%"
 
   return (
-    <div className="d-flex justify-content-center" style={{ backgroundColor: BACKGROUND_COLOR }}>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { duration: 0.75 } }}
+      exit={{ opacity: 0 }}
+
+      className="d-flex justify-content-center"
+      style={{ backgroundColor: BACKGROUND_COLOR }}
+    >
       <div style= {{ width: contentWidth }}>
         <div className="pt-3 d-flex justify-content-center">
           <p className="pt-5 lead" style={{
@@ -37,6 +45,6 @@ export default function Home() {
         <div className="pb-5"></div>
         <div className="pb-5"></div>
       </div>
-    </div>
+    </motion.div>
   )
 }
