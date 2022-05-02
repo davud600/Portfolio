@@ -27,7 +27,7 @@ export default function Home() {
         <div className="pt-3 d-flex justify-content-center">
           <p className="pt-5 lead" style={{
             fontSize: titleFontSize
-          }}>Hi, I'm e-el gatoo.</p>
+          }}>Hi, I'm Davudi.</p>
         </div>
         <div className="d-flex justify-content-center">
           <p className="pt-5 text-center display-4 fw-bold" style={{
