@@ -21,9 +21,14 @@ export default function Home() {
       exit={{ opacity: 0 }}
 
       className="d-flex justify-content-center"
-      style={{ backgroundColor: BACKGROUND_COLOR }}
+      style={{
+        backgroundColor: BACKGROUND_COLOR,
+        height: "32.6rem"
+      }}
     >
-      <div style= {{ width: contentWidth }}>
+      <div style={{
+        width: contentWidth
+      }}>
         <div className="pt-3 d-flex justify-content-center">
           <p className="pt-5 lead" style={{
             fontSize: titleFontSize
@@ -34,16 +39,6 @@ export default function Home() {
             fontSize: bigFontSize
           }}>I enjoy designing tech websites and digital products.</p>
         </div>
-
-        <div className="d-flex justify-content-center mt-5">
-        </div>
-        
-        <div className="pb-5"></div>
-        <div className="pb-5"></div>
-        <div className="pb-5"></div>
-        <div className="pb-5"></div>
-        <div className="pb-5"></div>
-        <div className="pb-5"></div>
       </div>
     </motion.div>
   )

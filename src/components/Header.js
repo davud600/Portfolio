@@ -1,7 +1,7 @@
 import { useLocation } from 'react-router-dom'
 import { Nav, Navbar, Container } from 'react-bootstrap'
 
-const NAVBAR_COLOR = "#5c5c5d"
+const NAVBAR_COLOR = "rgba(92, 92, 93, 0.95)"
 const NAVBAR_TEXT_COLOR1 = "#f2f2f2"
 const NAVBAR_TEXT_COLOR2 = "#d6d6d6"
 const NAVBAR_TEXT_ACTIVE = "white"
@@ -10,7 +10,11 @@ export default function Header() {
   const location = useLocation()
 
   return (
-    <div className="d-flex justify-content-center" style={{ backgroundColor:NAVBAR_COLOR }}>
+    <div className="d-flex justify-content-center blur-background" style={{
+      backgroundColor:NAVBAR_COLOR,
+      position: "sticky",
+      top: "0"
+    }}>
       <Navbar expand="sm">
         <Container>
           <Navbar.Brand href="/">
@@ -35,35 +39,6 @@ export default function Header() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
-
-      {/* <nav className="navbar navbar-expand-sm navbar-light">
-        <div className="me-5">
-          <a className="navbar-brand" href="/">
-            <i style={{ color:NAVBAR_TEXT_COLOR1 }} className="bi bi-house"></i>
-          </a>
-          <button style={{ color:NAVBAR_TEXT_COLOR1 }} className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-        </div>
-
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav mr-auto">
-            <li className="nav-item active">
-              <a style={{ color: location.pathname === '/' ? NAVBAR_TEXT_ACTIVE:NAVBAR_TEXT_COLOR2 }} className="px-3 nav-link" href="/">Home</a>
-            </li>
-            <li className="nav-item">
-              <a style={{ color: location.pathname === '/portfolio' ? NAVBAR_TEXT_ACTIVE:NAVBAR_TEXT_COLOR2 }} className="px-3 nav-link" href="/portfolio">Portfolio</a>
-            </li>
-            <li className="nav-item">
-              <a style={{ color: location.pathname === '/about' ? NAVBAR_TEXT_ACTIVE:NAVBAR_TEXT_COLOR2 }} className="px-3 nav-link" href="/about">About</a>
-            </li>
-            <li className="nav-item">
-              <a style={{ color: location.pathname === '/contact' ? NAVBAR_TEXT_ACTIVE:NAVBAR_TEXT_COLOR2 }} className="px-3 nav-link" href="/contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav> */}
     </div>
   )
 }
