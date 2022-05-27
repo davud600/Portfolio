@@ -1,7 +1,7 @@
 import { useLocation } from 'react-router-dom'
 import { Nav, Navbar, Container } from 'react-bootstrap'
 
-const NAVBAR_COLOR = "rgba(92, 92, 93, 0.95)"
+const NAVBAR_COLOR = "rgba(92, 92, 93, 0.925)"
 const NAVBAR_TEXT_COLOR1 = "#f2f2f2"
 const NAVBAR_TEXT_COLOR2 = "#d6d6d6"
 const NAVBAR_TEXT_ACTIVE = "white"
