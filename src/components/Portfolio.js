@@ -60,7 +60,7 @@ export default function Portfolio() {
               </div>
             </div>
           
-            <div className="d-flex w-100">
+            {/* <div className="d-flex w-100">
               <div className="w-100 text-center">
                 <ProjectCard props={{
                   project: "2",
@@ -69,7 +69,7 @@ export default function Portfolio() {
                   fontSize: fontSize
                 }} />
               </div>
-            </div>
+            </div> */}
           </div>:
           <div>
             <div className="d-flex flex-column w-100">
@@ -91,14 +91,14 @@ export default function Portfolio() {
                 }} />
               </div>
 
-              <div className="w-100 text-center">
+              {/* <div className="w-100 text-center">
                 <ProjectCard props={{
                   project: "2",
                   height: "17rem",
                   color: "white",
                   fontSize: fontSize
                 }} />
-              </div>
+              </div> */}
             </div>
           </div>}
 

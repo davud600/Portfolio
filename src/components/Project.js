@@ -3,7 +3,9 @@ import { useSearchParams } from "react-router-dom"
 import { useWindowDimensions } from "../hooks/WindowDimensions"
 import { useProjects } from "../hooks/Projects"
 
-import projectImage from "../images/project0/image0.jpg"
+import projectImage1 from "../images/project0/crud_phone1.png"
+import projectImage2 from "../images/project0/curd_phone2.png"
+import projectImage3 from "../images/project0/crud_phone1.png"
 
 const BACKGROUND_COLOR = "#f5f5f7"
 
@@ -45,7 +47,7 @@ export default function Project() {
                     overflow: 'hidden',
                     borderRadius: "1.5rem"
                   }}>
-                    <img alt="Not found" src={projectImage} />
+                    <img alt="Not found" src={projectImage1} />
                   </div>
                 </div>
                 
@@ -56,7 +58,7 @@ export default function Project() {
                     overflow: 'hidden',
                     borderRadius: "1.5rem"
                   }}>
-                    <img alt="Not found" src={projectImage} />
+                    <img alt="Not found" src={projectImage2} />
                   </div>
                 </div>
               </div>
@@ -69,7 +71,7 @@ export default function Project() {
                     overflow: 'hidden',
                     borderRadius: "1.5rem"
                   }}>
-                    <img alt="Not found" src={projectImage} />
+                    <img alt="Not found" src={projectImage3} />
                   </div>
                 </div>
               </div>
@@ -83,7 +85,7 @@ export default function Project() {
                     overflow: 'hidden',
                     borderRadius: "1.5rem"
                   }}>
-                    <img alt="Not found" src={projectImage} />
+                    <img alt="Not found" src={projectImage1} />
                   </div>
                 </div>
                 
@@ -94,7 +96,7 @@ export default function Project() {
                     overflow: 'hidden',
                     borderRadius: "1.5rem"
                   }}>
-                    <img alt="Not found" src={projectImage} />
+                    <img alt="Not found" src={projectImage2} />
                   </div>
                 </div>
 
@@ -105,7 +107,7 @@ export default function Project() {
                     overflow: 'hidden',
                     borderRadius: "1.5rem"
                   }}>
-                    <img alt="Not found" src={projectImage} />
+                    <img alt="Not found" src={projectImage3} />
                   </div>
                 </div>
               </div>
