@@ -97,7 +97,7 @@ export default function About() {
             College student studying computer engineering
             with about 3 years of experience in html, css
             and javascript,
-            6 months of full stack development 
+            about a year of full stack development 
             (MERN Stack).
           </p>
         </div>

@@ -50,14 +50,14 @@ export default function Portfolio() {
                 }} />
               </div>
               
-              <div className="w-50 mb-3">
+              {/* <div className="w-50 mb-3">
                 <ProjectCard props={{
                   project: "1",
                   height: "30rem",
                   color: "white",
                   fontSize: fontSize
                 }} />
-              </div>
+              </div> */}
             </div>
           
             {/* <div className="d-flex w-100">
@@ -82,14 +82,14 @@ export default function Portfolio() {
                 }} />
               </div>
               
-              <div className="w-100 mb-3">
+              {/* <div className="w-100 mb-3">
                 <ProjectCard props={{
                   project: "1",
                   height: "17rem",
                   color: "white",
                   fontSize: fontSize
                 }} />
-              </div>
+              </div> */}
 
               {/* <div className="w-100 text-center">
                 <ProjectCard props={{
