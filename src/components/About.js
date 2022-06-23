@@ -127,9 +127,14 @@ export default function About() {
             style={{
               fontSize: bigFontSize,
             }}>
-            I can create for you a web application using up-to date
-            techonologies... More than 3 years of experience in html, css and
-            javascript, about a year of full stack development (MERN Stack).
+            More than 3 years of experience in html, css and javascript. Self
+            taught passionate fullstack web developer, with years of experience
+            in various modern technologies gathered from online courses,
+            practice projects and all the way to building real world projects in
+            freelancing. I am able to deliver modern responsive web applications
+            of high quality. My main skills in web development are: React js
+            (including libraries like redux, bootstrap and even sass), CSS and
+            HTML, Node js and express, mongodb and mongoose, firebase, etc…
           </p>
         </div>
       </div>
