@@ -1,18 +1,25 @@
-import {motion} from 'framer-motion'
-import {useSearchParams} from 'react-router-dom'
-import {useWindowDimensions} from '../hooks/WindowDimensions'
-import {useProjects} from '../hooks/Projects'
+import { motion } from 'framer-motion'
+import { useSearchParams } from 'react-router-dom'
+import { useWindowDimensions } from '../hooks/WindowDimensions'
+import { useProjects } from '../hooks/Projects'
 
-import project0Image0 from '../images/project0/1.jpg'
-import project0Image1 from '../images/project0/2.jpg'
+import project0Image0 from '../images/project0/1.png'
+import project0Image1 from '../images/project0/2.png'
+import project0Image2 from '../images/project0/3.png'
+import project0Image3 from '../images/project0/4.png'
+import project0Image4 from '../images/project0/5.png'
+
 import project1Image0 from '../images/project1/0.png'
 import project1Image1 from '../images/project1/1.png'
 import project1Image2 from '../images/project1/3.png'
-import project2Image0 from '../images/project2/7.png'
-import project2Image1 from '../images/project2/6.png'
-import project2Image2 from '../images/project2/0.png'
+import project1Image3 from '../images/project1/2.png'
+import project1Image4 from '../images/project1/4.png'
+
+import project2Image0 from '../images/project2/1.png'
+import project2Image1 from '../images/project2/2.png'
+import project2Image2 from '../images/project2/3.png'
 import project2Image3 from '../images/project2/4.png'
-import project2Image4 from '../images/project2/2.png'
+import project2Image4 from '../images/project2/5.png'
 
 const BACKGROUND_COLOR = '#f5f5f7'
 
@@ -22,7 +29,7 @@ let projectImage, projectImage2, projectImage3, projectImage4, projectImage5
 
 export default function Project() {
   const [searchParams] = useSearchParams()
-  const {width, height} = useWindowDimensions()
+  const { width, height } = useWindowDimensions()
   const projects = useProjects()
 
   isPhone = height / width >= 16 / 16
@@ -33,15 +40,15 @@ export default function Project() {
   if (searchParams.get('id') === '0') {
     projectImage = project0Image0
     projectImage2 = project0Image1
-    projectImage3 = project0Image1
-    projectImage4 = project0Image1
-    projectImage5 = project0Image1
+    projectImage3 = project0Image2
+    projectImage4 = project0Image3
+    projectImage5 = project0Image4
   } else if (searchParams.get('id') === '1') {
     projectImage = project1Image0
     projectImage2 = project1Image1
     projectImage3 = project1Image2
-    projectImage4 = project1Image2
-    projectImage5 = project1Image2
+    projectImage4 = project1Image3
+    projectImage5 = project1Image4
   } else if (searchParams.get('id') === '2') {
     projectImage = project2Image0
     projectImage2 = project2Image1
@@ -52,12 +59,12 @@ export default function Project() {
 
   return (
     <motion.div
-      initial={{opacity: 0}}
-      animate={{opacity: 1, transition: {duration: 0.25}}}
-      exit={{opacity: 0}}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { duration: 0.25 } }}
+      exit={{ opacity: 0 }}
       className="d-flex justify-content-center"
-      style={{backgroundColor: BACKGROUND_COLOR}}>
-      <div style={{width: contentWidth}}>
+      style={{ backgroundColor: BACKGROUND_COLOR }}>
+      <div style={{ width: contentWidth }}>
         <div className="w-100 pt-5 d-flex justify-content-center mt-5">
           <div
             className="w-100 d-flex justify-content-center flex-column"
@@ -165,7 +172,7 @@ export default function Project() {
             ) : (
               <div>
                 <div className="d-flex flex-column w-100">
-                  <div className="w-100 me-3 mb-3">
+                  <div className="w-100 mb-3 text-center">
                     <div
                       style={{
                         width: '100%',
@@ -183,7 +190,7 @@ export default function Project() {
                     </div>
                   </div>
 
-                  <div className="w-100 mb-3">
+                  <div className="w-100 mb-3 text-center">
                     <div
                       style={{
                         width: '100%',
@@ -201,8 +208,9 @@ export default function Project() {
                     </div>
                   </div>
 
-                  <div className="w-100 text-center">
+                  <div className="w-100">
                     <div
+                      className="d-flex justify-content-center"
                       style={{
                         width: '100%',
                         height: '17rem',
@@ -212,7 +220,7 @@ export default function Project() {
                         borderWidth: '1px',
                       }}>
                       <img
-                        className="project-image"
+                        className="project-image text-center"
                         alt="Not found"
                         src={projectImage3}
                       />
@@ -250,7 +258,7 @@ export default function Project() {
                       <img
                         className="project-image"
                         alt="Not found"
-                        src={projectImage4}
+                        src={projectImage5}
                       />
                     </div>
                   </div>
