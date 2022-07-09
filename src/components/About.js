@@ -82,7 +82,7 @@ export default function About() {
             fontSize: fontSize,
             color: PRIMARY_TEXT_COLOR,
           }}>
-          React js, bootstrap
+          React js, bootstrap, tailwind
         </p>
       </div>
       <hr className="pb-0 mb-4 mt-2 align-self-center" style={LINE_STYLE} />
